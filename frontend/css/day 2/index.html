@@ -1,54 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>1]this Universal</h1>
-    <p>this is Universal</p>
-    <p>this is para</p>
-    <hr />
-    <h1>2]this is Type</h1>
-    <p>this is para</p>
-    <hr />
-    <h1>3]this is class</h1>
-    <p class="para">this is para</p>
-    <hr />
-    <h1>4]this is id</h1>
-    <p id="para">this is para</p>
-    <hr />
-    <h1>5]this is grouping</h1>
-    <p class="para" id="para">this is para</p>
-    <hr />
-    <h1>6]this is descendent</h1>
-    <div>
-      <p class="para" id="para">this is para</p>
-    </div>
-    <hr />
-    <h1>7]this is chaining</h1>
-    <div class="div1 div2">
-      <p class="para" id="para">this is para</p>
-    </div>
-    <hr />
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- casacading style sheet 
- last in wins
- specificity- id>class>type>universal
- inline>internal>external
- internal> external
- inline> external
- inline> internal
- selector should be unique
-Types of selectorin css
- Universal
- Type / tag
- class
- id
- grouping 
- descendent - child,general sibling,adjacent sibling
- chaining -->
+  <h1>CSS Selectors Example</h1>
+
+  <!-- Universal Selector -->
+  <h2>1. Universal Selector (*)</h2>
+  <p>This paragraph is affected by universal selector.</p>
+
+  <hr>
+
+  <!-- Type Selector -->
+  <h2>2. Type Selector (p)</h2>
+  <p>This is a paragraph using type selector.</p>
+
+  <hr>
+
+  <!-- Class Selector -->
+  <h2>3. Class Selector (.text)</h2>
+  <p class="text">This paragraph uses a class selector.</p>
+
+  <hr>
+
+  <!-- ID Selector -->
+  <h2>4. ID Selector (#unique)</h2>
+  <p id="unique">This paragraph uses an ID selector.</p>
+
+  <hr>
+
+  <!-- Grouping Selector -->
+  <h2>5. Grouping Selector (h1, h2, p)</h2>
+  <p>This paragraph is part of a grouped selector.</p>
+
+  <hr>
+
+  <!-- Descendant Selector -->
+  <h2>6. Descendant Selector (div p)</h2>
+  <div class="container">
+    <p>This paragraph is inside a div.</p>
+  </div>
+
+  <hr>
+
+  <!-- Chaining Selector -->
+  <h2>7. Chaining Selector (.box.highlight)</h2>
+  <div class="box highlight">
+    <p>This div has two classes.</p>
+  </div>
+
+</body>
+</html>
