@@ -1,0 +1,30 @@
+# Understanding the Browser Inspector Tool
+
+## What is the Inspector?
+
+The **Developer Tools Inspector** is a built-in browser feature that allows you to examine and debug the HTML and CSS code of any website. It's an essential tool for web developers and designers to understand how websites are structured and styled.
+
+## Opening the Inspector
+
+You can access the developer tools in multiple ways:
+
+1. **Right-click method**: Right-click on any element on the page and select "Inspect" or "Inspect Element"
+2. **Keyboard shortcut**: Press `F12` on Windows/Linux or `Cmd + Option + I` on Mac
+3. **Alternative keyboard shortcut**: Press `Ctrl + Shift + I` (Windows/Linux)
+
+## Understanding the Inspector Panel
+
+Once opened, you'll see a panel typically docked at the bottom or side of your browser window containing:
+
+- **Elements/Inspector Tab**: Displays the HTML structure of the page in a tree format
+- **Styles Tab**: Shows all CSS rules applied to the selected element, including inherited styles
+- **Computed Tab**: Displays the final computed CSS values for the selected element
+
+## Key Features
+
+- **Element Picker**: Use the selector tool (arrow icon in the top-left corner) to click on any element on the page and view its corresponding HTML and CSS code
+- **Live Editing**: Modify HTML and CSS directly in the inspector to see real-time changes (note: these changes are not saved permanently)
+- **Box Model Visualization**: View margins, padding, borders, and content dimensions of any element
+- **Responsive Testing**: Check how your website looks on different screen sizes
+
+This tool is invaluable for learning how websites work and debugging styling issues!
