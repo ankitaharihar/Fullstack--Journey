@@ -1,4 +1,42 @@
-# Block, inline and inline-block elements:
+# Box-sizing
+
+The `box-sizing` CSS property sets how the total width and height of an element is calculated.
+
+## 1. box-sizing: content-box;
+
+1. This is the default value of `box-sizing` in CSS.
+2. The `width` and `height` properties include the content, but do not include the padding, border, or margin. For example,
+
+```css
+.box {
+  width: 350px;
+  border: 10px solid black;
+}
+/* actual width = width + border + padding */
+```
+
+This renders a box that is 370px wide.
+
+## 2. box-sizing: border-box;
+
+1. The `width` and `height` properties include the content, padding, and border, but do not include the margin.
+
+```css
+.box {
+  width: 350px;
+  box-sizing: border-box;
+  border: 10px solid black;
+}
+/* actual width = given width (350px). Border is included inside that width. */
+```
+
+- To override the default `box-sizing: content-box;`, add this in CSS:
+
+````css
+* {
+  box-sizing: border-box;
+}
+```# Block, inline and inline-block elements:
 
 - Depending on behaviour of elements and “display” property, elements can be divided into following categories
   - Block level elements
@@ -71,3 +109,4 @@
 ## Tip
 
 If you see unexpected gaps between inline-block elements, it can be caused by whitespace in the HTML. You can remove the whitespace or set the parent font-size to 0 and reset it on children.
+````
