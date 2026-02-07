@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+/* content-box */
+.content-box {
+  box-sizing: content-box;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border: 7px solid rgb(19, 8, 119);
+  margin-bottom: 20px;
+  background-color: rgb(153, 160, 236);
+}
+
+/* border-box */
+.border-box {
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border: 7px solid rgb(113, 3, 3);
+  margin-bottom: 20px;
+  background-color: rgb(238, 138, 127);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
