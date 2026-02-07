@@ -15,20 +15,20 @@ p {
 }
 
 /* =========================
-   3) Class Selector
-   Applies to elements with class="para"
+  3) Class Selector
+  Applies to elements with class="text"
 ========================= */
-.para {
+.text {
   color: green;
   font-size: 18px;
 }
 
 /* =========================
-   4) ID Selector
-   Applies to element with id="para"
-   (id has higher priority than class)
+  4) ID Selector
+  Applies to element with id="unique"
+  (id has higher priority than class)
 ========================= */
-#para {
+#unique {
   color: red;
   font-weight: bold;
 }
@@ -51,10 +51,10 @@ div p {
 }
 
 /* =========================
-   7) Chaining Selector
-   Element having BOTH div1 and div2
+  7) Chaining Selector
+  Element having BOTH box and highlight
 ========================= */
-.div1.div2 {
+.box.highlight {
   border: 2px solid blue;
   padding: 10px;
 }
