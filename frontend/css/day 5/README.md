@@ -1,4 +1,138 @@
-# Box-sizing
+# Box-sizing:
+
+The **`box-sizing` CSS** property sets how the total width and height of an element is calculated.
+
+1. **box-sizing: content-box;**
+   1. This is the default value of box-sizing property in css.
+   2. The [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) properties include the content, but does not include the padding, border, or margin. For example,
+
+```css
+.box {
+  width: 350px;
+  border: 10px solid black;
+}
+/* actual width = width + border + padding */
+```
+
+   renders a box that is 370px wide.
+
+1. **box-sizing: border-box;**
+   1. The [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) properties include the content, padding, and border, but do not include the margin.
+
+```css
+.box {
+  width: 350px;
+  box-sizing: border-box;
+  border: 10px solid black;
+}
+/* actual width = given width ie. 350px border will be included
+ inside of that width  */
+```
+
+- So to override the default box-sizing: content-box; we add this in css
+
+```css
+* {
+  box-sizing: border-box;
+}
+```
+
+## CodePen
+
+https://codepen.io/Ankita-Harihar/pen/raLZqwv# Box-sizing:
+
+The **`box-sizing` CSS** property sets how the total width and height of an element is calculated.
+
+1. **box-sizing: content-box;**
+   1. This is the default value of box-sizing property in css.
+   2. The [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) properties include the content, but does not include the padding, border, or margin. For example,
+
+```css
+.box {
+  width: 350px;
+  border: 10px solid black;
+}
+/* actual width = width + border + padding */
+```
+
+renders a box that is 370px wide.
+
+1. **box-sizing: border-box;**
+   1. The [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) properties include the content, padding, and border, but do not include the margin.
+
+```css
+.box {
+  width: 350px;
+  box-sizing: border-box;
+  border: 10px solid black;
+}
+/* actual width = given width ie. 350px border will be included
+ inside of that width  */
+```
+
+- So to override the default box-sizing: content-box; we add this in css
+
+````css
+* {
+  box-sizing: border-box;
+}
+```# Box-sizing:
+
+The **`box-sizing` CSS** property sets how the total width and height of an element is calculated.
+
+1. **box-sizing: content-box;**
+   1. This is the default value of box-sizing property in CSS.
+   2. The [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) properties include the content, but do not include the padding, border, or margin. For example,
+
+```css
+.box {
+  width: 350px;
+  border: 10px solid black;
+}
+/* actual width = width + border + padding */
+````
+
+renders a box that is 370px wide.
+
+1. **box-sizing: border-box;**
+   1. The [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) properties include the content, padding, and border, but do not include the margin.
+
+```css
+.box {
+  width: 350px;
+  box-sizing: border-box;
+  border: 10px solid black;
+}
+/* actual width = given width ie. 350px. Border will be included inside of that width */
+```
+
+- So to override the default box-sizing: content-box; we add this in CSS
+
+```css
+* {
+  box-sizing: border-box;
+}
+```
+
+## More info
+
+- `box-sizing` affects height calculations in the same way as width.
+- Margin is never included in the size calculation for either value.
+- `border-box` makes layout math easier, especially for grids and cards.
+- You can use `box-sizing: inherit;` on components to keep consistent sizing rules.
+- Common pattern:
+
+````css
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+```# Box-sizing
 
 The `box-sizing` CSS property sets how the total width and height of an element is calculated.
 
@@ -13,7 +147,7 @@ The `box-sizing` CSS property sets how the total width and height of an element 
   border: 10px solid black;
 }
 /* actual width = width + border + padding */
-```
+````
 
 This renders a box that is 370px wide.
 
