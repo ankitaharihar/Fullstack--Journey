@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Windsurf primary";
+  src: url("https://windsurf.com/_next/static/media/3ecc75a922018515-s.p.woff2");
+}
+
+@font-face {
+  font-family: "Windsurf secondary";
+  src: url("https://windsurf.com/_next/static/media/13971731025ec697-s.p.woff2");
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #011c42;
+  height: 12vh;
+  align-items: center;
+  padding-left: 6vw;
+  font-family: "Windsurf secondary";
+
+  text-transform: uppercase;
+}
+
+header a {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+nav a {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: #ffffff33;
+}
+
+nav a i {
+  transition: rotate 0.15s ease-in-out;
+}
+
+nav a:hover i {
+  rotate: 180deg;
+}
+
+.windsurf-logo {
+  width: 160px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+.header-last {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-profile {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.download-btn {
+  background-color: #34e8bb;
+  color: black;
+  height: 12vh;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-link-1 {
+  position: relative;
+}
+
+.nav-link-1:hover .box-1 {
+  display: block;
+}
+
+.box-1 {
+  background-color: aquamarine;
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  top: 8vh;
+  left: -4px;
+  display: none;
+}
