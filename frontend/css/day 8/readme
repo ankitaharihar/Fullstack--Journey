@@ -1,142 +1,22 @@
-📏 CSS Units — What & Why
+## 📏 CSS Units — What & Why
 
-CSS units decide how big or small elements and text appear.
+CSS units define how big or small elements and text appear on a webpage.
 
-Two main types:
+There are two main types of units:
 
-Absolute units → fixed size
+- 🔴 Absolute units → fixed size  
+- 🟢 Relative units → responsive (based on parent, root, or screen)
 
-Relative units → responsive (based on something)
+---
 
-🔴 Absolute Units (fixed)
+## 🔴 Absolute Units (Fixed)
 
-These do NOT change with screen size.
+These units **do not change** with screen size.
 
-✅ px (most common)
+### ✅ px (most common)
+
+```css
 .box {
-width: 200px;
-font-size: 16px;
+  width: 200px;
+  font-size: 16px;
 }
-
-✔ Features
-
-Fixed size
-
-Easy to use
-
-Not responsive
-
-👉 Use for: borders, icons, small fixed items
-
-🟢 Relative Units (VERY IMPORTANT)
-
-These change based on parent/root/screen.
-
-✅ % (percentage)
-
-Relative to parent size
-
-.parent {
-width: 400px;
-}
-
-.child {
-width: 50%;
-}
-
-👉 Child becomes 200px
-
-✅ em
-
-Relative to parent font-size
-
-.parent {
-font-size: 20px;
-}
-
-.child {
-font-size: 2em; /_ 40px _/
-}
-
-⚠️ Warning
-
-em can compound (multiply again and again).
-
-✅ rem ⭐ (MOST IMPORTANT)
-
-Relative to root (html) font-size
-
-html {
-font-size: 16px;
-}
-
-h1 {
-font-size: 2rem; /_ 32px _/
-}
-
-✔ Why rem is best
-
-predictable
-
-scalable
-
-industry standard
-
-👉 Use rem for fonts
-
-✅ vh (viewport height)
-
-Relative to screen height
-
-.hero {
-height: 100vh;
-}
-
-👉 Full screen section
-
-✅ vw (viewport width)
-
-Relative to screen width
-
-.box {
-width: 50vw;
-}
-
-🧠 Quick Memory Trick
-Unit Based on
-px fixed
-% parent
-em parent font
-rem root font ⭐
-vh screen height
-vw screen width
-🧪 Mini Practice (do this)
-HTML
-
-<div class="parent">
-	<div class="child">Resize me</div>
-</div>
-
-CSS
-.parent {
-width: 400px;
-background: lightgray;
-}
-
-.child {
-width: 50%;
-background: lightblue;
-}
-
-👉 Resize window and observe.
-
-🎯 Real-world usage guide
-
-✅ Fonts → rem
-✅ Layout width → % or vw
-✅ Full screen section → vh
-✅ Small fixed things → px
-
-🗣️ Viva one-liner
-
-“CSS units control sizing, where px is fixed and rem, %, vh, vw are responsive units.”
