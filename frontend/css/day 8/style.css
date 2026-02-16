@@ -1,74 +1,64 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.unit{
-    border: 2px solid black;
-    padding: 10px;
+body{
+    font-family: Arial, sans-serif;
+    background:#1f2937;
+    color: white;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 120px;
+    gap: 40px;
+}
+.hero-left {
+    max-width: 500px;
+}
+.hero-left h1 {
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.hero-left p {
+    color: #cbd5e1;
     margin-bottom: 20px;
-    background-color: #f0f0f0;
 }
-
-/* ---------- PX ---------- */
-.px {
-  width: 200px;
-  background: lightblue;
-  padding: 10px;
-  margin-bottom: 20px;
+.hero-left button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
 }
-
-/* ---------- % ---------- */
-.parent {
-  width: 400px;
-  background: #eee;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.percent {
-  width: 50%;
-  background: lightcoral;
-  padding: 10px;
-}
-
-/* ---------- EM ---------- */
-.parent-font {
-  font-size: 20px;
-}
-
-.em-text {
-  font-size: 2em;
-  background: lightgreen;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-/* ---------- REM ---------- */
-html {
-  font-size: 16px;
-}
-
-.rem-text {
-  font-size: 2rem;
-  background: lightgoldenrodyellow;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-/* ---------- VH ---------- */
-.vh-box {
-  height: 30vh;
-  background: plum;
-  margin-bottom: 20px;
+.hero-right {
+  width: 500px;
+  height: 220px;
+  background: #6b7280;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
 }
 
-/* ---------- VW ---------- */
-.vw-box {
-  width: 50vw;
-  background: orange;
-  padding: 10px;
-}
