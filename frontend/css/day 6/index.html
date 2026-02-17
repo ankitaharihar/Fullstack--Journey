@@ -3,60 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Block, Inline and Inline-block</title>
+    <title>Types of elements</title>
+    <style>
+      p {
+        color: blue;
+        background-color: lightpink;
+        height: 100px;
+        width: 100px;
+      }
+      a {
+        color: red;
+        background-color: lime;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
-
-    <h1>Block Element</h1>
-    <p>Block elements start on a new line and take full width.</p>
-
-    <div style="
-      background-color: lightblue;
-      width: 200px;
-      height: 80px;
-      text-align: center;
-      line-height: 80px;
-      display: block;
-    ">
-      Block Element
-    </div>
-
-    <hr>
-
-    <h1>Inline Elements</h1>
-    <p>Inline elements stay on the same line and ignore width & height.</p>
-
-    <span style="
-      background-color: lightcoral;
-      padding: 5px 10px;
-      display: inline;
-    ">
-      Inline 1
-    </span>
-
-    <span style="
-      background-color: lightcoral;
-      padding: 5px 10px;
-      display: inline;
-    ">
-      Inline 2
-    </span>
-
-    <hr>
-
-    <h1>Inline-block Elements</h1>
-    <p>Inline-block elements stay in line but respect width & height.</p>
-
-    <span style="
-      background-color: lightgreen;
-      width: 200px;
-      height: 100px;
-      display: inline-block;
-      text-align: center;
-      line-height: 100px;
-    ">
-      Inline-block
-    </span>
-
+    <p>This is a paragraph element.</p>
+    <a href="">This is an anchor element.</a>
+    <h1>Block level element</h1>
+    <ul>
+      <li>they occupy full width of their container</li>
+      <li>width is determined by content</li>
+      <li>height is determined by content</li>
+      <li>display:block</li>
+      eg- div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, header, section, footer,
+      nav, main, article, aside
+    </ul>
+    <h1>Inline level element</h1>
+    <ul>
+      <li>they only occupy as much width as necessary</li>
+      <li>width is determined by content</li>
+      <li>height is determined by content</li>
+      <li>display:inline</li>
+      eg- a, span, strong, em, img, input, label, select, textarea, button
+    </ul>
+    <h1>Inline-block level element</h1>
+    <ul>
+      <li>they only occupy as much width as necessary</li>
+      <li>width can be set by css</li>
+      <li>height can be set by css</li>
+      <li>display:inline-block</li>
+      eg- elements that are set to display:inline-block in css
   </body>
 </html>
