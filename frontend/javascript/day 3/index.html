@@ -1,12 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day 3</title>
-  </head>
-  <body>
-    <h1>this is day 3</h1>
-   <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Objects & Operators</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>JavaScript Objects</h1>
+    <p>
+      An object is a collection of key-value pairs. It can contain properties and methods.  Objects are mutable and stored by reference.
+    </p>
+
+    <h1>Objects in JavaScript</h1>
+    <ul>
+      <li>Access properties → obj.key or obj["key"]</li>
+      <li>Add properties → obj.key = value</li>
+      <li>Delete properties → delete obj.key</li>
+    </ul>
+
+    <hr />
+
+    <h1>Undefined and Null</h1>
+    <ul>
+      <li><b>undefined</b> — variable declared but not assigned</li>
+      <li><b>null</b> — intentional absence of value</li>
+      <li><b>typeof null</b> returns "object" (known JavaScript bug)</li>
+    </ul>
+
+    <hr />
+
+    <h1>Symbol</h1>
+    <p>
+      Symbols are a primitive data type introduced in ES6. Each symbol value is unique and immutable.
+    </p>
+
+    <hr />
+
+    <h1>let vs const (Quick Notes)</h1>
+    <ul>
+      <li><b>const</b> must be initialized and cannot be reassigned</li>
+      <li><b>let</b> can be declared first and reassigned later</li>
+    </ul>
+
+    <hr />
+
+    <h1>Operators in JavaScript</h1>
+
+    <h2>Arithmetic Special Cases</h2>
+    <ul>
+      <li>x / 0 → Infinity</li>
+      <li>-x / 0 → -Infinity</li>
+      <li>0 / 0 → NaN</li>
+    </ul>
+
+    <h2>Operator Types</h2>
+    <ul>
+      <li><b>Arithmetic:</b> +, -, *, /, %, ++, --</li>
+      <li><b>Assignment:</b> =, +=, -=, *=, /=, %=</li>
+      <li><b>Comparison:</b> ==, ===, !=, !==, &gt;, &lt;, &gt;=, &lt;=</li>
+      <li><b>Logical:</b> &&, ||, !</li>
+      <li><b>Ternary:</b> condition ? expr1 : expr2</li>
+      <li><b>Bitwise:</b> &, |, ^, ~, &lt;&lt;, &gt;&gt;, &gt;&gt;&gt;</li>
+    </ul>
+
+    <hr />
+
+    <!-- IMAGE SECTION -->
+    <h1>Operators Cheat Sheet</h1>
+    <div class="image-box">
+      <img src="operators.png" alt="JavaScript Operators Chart" />
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

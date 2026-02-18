@@ -1,0 +1,112 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+  background: radial-gradient(circle at top, #0b1220, #020617 70%);
+  color: #e6edf3;
+  padding: 40px 20px;
+  line-height: 1.7;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 18px;
+
+  /* glass effect */
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+
+  /* soft glow */
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.6),
+    0 0 60px rgba(56, 189, 248, 0.08);
+
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  color: #38bdf8;
+  font-size: 32px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+
+h2 {
+  color: #7dd3fc;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* ===== PARAGRAPH ===== */
+p {
+  color: #cbd5e1;
+  margin-bottom: 12px;
+}
+
+/* ===== LISTS ===== */
+ul {
+  margin-left: 22px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin: 6px 0;
+  color: #dbeafe;
+}
+
+/* ===== HR LINE ===== */
+hr {
+  border: none;
+  height: 1px;
+  margin: 32px 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(56, 189, 248, 0.35),
+    transparent
+  );
+}
+
+/* ===== IMAGE BOX ===== */
+.image-box {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(2, 6, 23, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* ✨ subtle hover */
+.image-box img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
