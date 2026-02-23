@@ -5,24 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>loops</h1>
-    Example -  give a num check if it is prime or not it is is prime  = given num isprime else print given num is not prime
-    <br>
-    <h3>Rules for loop </h3>
-    <li>You should neve write infinite loops ex- (;;), </li>
-    <li>continue and break statements are used to control loop execution and always with proper conditions</li>
-    <li>loop </li>
-        <li>for loop </li>
-        <li>while loop </li>
-        <li>do while loop </li>
-        <br>
-        <h2>for loop</h2>
-        syntax - for(initialization;condition;increment/decrement){
-            //code to be executed
-        }
-        <br>
-        example - print 1 to 10
+<body> 
+    <h1>Loops in JavaScript</h1>
+
+<p>
+Example: Given a number, check whether it is prime or not.  
+If prime → print "Number is prime"  
+Else → print "Number is not prime"
+</p>
+
+<hr />
+
+<h2>Rules for Loops</h2>
+<ul>
+  <li>Never write infinite loops accidentally (e.g., <code>for(;;)</code>)</li>
+  <li>Always use <b>break</b> and <b>continue</b> with proper conditions</li>
+  <li>Make sure loop condition eventually becomes false</li>
+</ul>
+
+<hr />
+
+<h2>Types of Loops</h2>
+<ul>
+  <li>for loop</li>
+  <li>while loop</li>
+  <li>do...while loop</li>
+</ul>
+
+<hr />
+
+<h2>for Loop</h2>
+
+<p><b>Syntax:</b></p>
+
+<pre>
+for (initialization; condition; increment/decrement) {
+  // code to be executed
+}
+</pre>
+
+---
+
+<h3>Example 1 — Print 1 to 10</h3>
+
+<pre>
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+</pre>
+
+<p><b>Output:</b> 1 2 3 ... 10</p>
+
+<hr />
+
+<h3>Example 2 — Prime Number Check</h3>
+
+<pre>
+let num = 7;
+let isPrime = true;
+
+if (num <= 1) {
+  isPrime = false;
+} else {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+}
+
+if (isPrime) {
+  console.log("Given number is prime");
+} else {
+  console.log("Given number is not prime");
+}
+</pre>
+
+<hr />
+
+<h2>while Loop</h2>
+
+<p><b>Syntax:</b></p>
+
+<pre>
+while (condition) {
+  // code
+}
+</pre>
+
+<h3>Example — Print 1 to 5</h3>
+
+<pre>
+let i = 1;
+
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+</pre>
+
+<hr />
+
+<h2>do...while Loop</h2>
+
+<p><b>Syntax:</b></p>
+
+<pre>
+do {
+  // code
+} while (condition);
+</pre>
+
+<h3>Example — Runs at least once</h3>
+
+<pre>
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+</pre>
+    ✅ for loop → when iterations known
+✅ while loop → when condition-based
+✅ do…while → runs at least once
+
+
+<h1>5 Steps to solve any problem</h1>
+
+<ul><li>✅ Step 1 — Understand the question</li>
+
+👉 What is given?
+👉 What do you need to find?
+<br>
+<li>✅ Step 2 — Plan the logic</li>
+
+👉 Think in simple English
+👉 Break into small steps
+<br>
+<li>✅ Step 3 — Choose the method</li>
+
+👉 Loop?
+👉 If-else?
+👉 Array method?
+
+Pick the right tool.
+<br>
+<li>✅ Step 4 — Flowchart or Pseudocode</li>
+
+👉 Draw the flowchart or write pseudocode
+👉 like how problem work , how to solve 
+<br>
+<li>✅ Step 5 — Write the code</li>
+
+👉 Convert your logic into JavaScript
+👉 Keep it simple first
+<br>
+<li>✅ Step 6 — Test the code</li>
+
+👉 Try different inputs
+👉 Check edge cases
+👉 Fix mistakes
+</ul>
     <script src="script.js"></script>
 </body>
 </html>
