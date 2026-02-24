@@ -24,3 +24,7 @@ for (let num = 2; num <= 50; num++) {
  //   console.log(num + " is not prime");
 //    continue;
 //  } }
+
+
+
+// print odd and even number 
