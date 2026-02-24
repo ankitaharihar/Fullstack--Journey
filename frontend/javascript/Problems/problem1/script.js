@@ -1,10 +1,5 @@
-// This script checks for prime numbers from 1 to 50 and logs the result to the console.
-for (let num = 1; num <= 50; num++) {
-
-  if (num <= 1) {
-    console.log(num + " is not prime");
-    continue;
-  }
+// Checks for prime numbers from 1 to 50 
+for (let num = 2; num <= 50; num++) {
 
   let isPrime = true;
 
@@ -21,3 +16,11 @@ for (let num = 1; num <= 50; num++) {
     console.log(num + " is not prime");
   }
 }
+
+
+//for (let num = 1; num <= 50; num++) {
+
+//  if (num <= 1) {
+ //   console.log(num + " is not prime");
+//    continue;
+//  } }
