@@ -1,173 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body> 
+  </head>
+  <body>
     <h1>Loops in JavaScript</h1>
 
-<p>
-Example: Given a number, check whether it is prime or not.  
-If prime → print "Number is prime"  
-Else → print "Number is not prime"
-</p>
+    <h2>Rules for Loops</h2>
+    <ul>
+      <li>
+        Never write infinite loops accidentally (e.g., <code>for(;;)</code>)
+      </li>
+      <li>
+        Always use <b>break</b> and <b>continue</b> with proper conditions
+      </li>
+      <li>Make sure loop condition eventually becomes false</li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Rules for Loops</h2>
-<ul>
-  <li>Never write infinite loops accidentally (e.g., <code>for(;;)</code>)</li>
-  <li>Always use <b>break</b> and <b>continue</b> with proper conditions</li>
-  <li>Make sure loop condition eventually becomes false</li>
-</ul>
+    <h2>Types of Loops</h2>
+    <ul>
+      <li>for loop</li>
+      <li>while loop</li>
+      <li>do...while loop</li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Types of Loops</h2>
-<ul>
-  <li>for loop</li>
-  <li>while loop</li>
-  <li>do...while loop</li>
-</ul>
+    <h2>for Loop</h2>
+    <p>when you know exact number of iterations</p>
 
-<hr />
+    <p><b>Syntax:</b></p>
 
-<h2>for Loop</h2>
-
-<p><b>Syntax:</b></p>
-
-<pre>
+    <pre>
 for (initialization; condition; increment/decrement) {
   // code to be executed
 }
-</pre>
+</pre
+    >
 
----
+    <h2>while Loop</h2>
+    <p>When you dont know the exact no of iterations</p>
 
-<h3>Example 1 — Print 1 to 10</h3>
+    <p><b>Syntax:</b></p>
 
-<pre>
-for (let i = 1; i <= 10; i++) {
-  console.log(i);
-}
-</pre>
-
-<p><b>Output:</b> 1 2 3 ... 10</p>
-
-<hr />
-
-<h3>Example 2 — Prime Number Check</h3>
-
-<pre>
-let num = 7;
-let isPrime = true;
-
-if (num <= 1) {
-  isPrime = false;
-} else {
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) {
-      isPrime = false;
-      break;
-    }
-  }
-}
-
-if (isPrime) {
-  console.log("Given number is prime");
-} else {
-  console.log("Given number is not prime");
-}
-</pre>
-
-<hr />
-
-<h2>while Loop</h2>
-
-<p><b>Syntax:</b></p>
-
-<pre>
+    <pre>
 while (condition) {
   // code
 }
-</pre>
+</pre
+    >
 
-<h3>Example — Print 1 to 5</h3>
+    <h2>do...while Loop</h2>
+    <p>When you want to exacute at least once time to run code</p>
+    <p><b>Syntax:</b></p>
 
-<pre>
-let i = 1;
-
-while (i <= 5) {
-  console.log(i);
-  i++;
-}
-</pre>
-
-<hr />
-
-<h2>do...while Loop</h2>
-
-<p><b>Syntax:</b></p>
-
-<pre>
+    <pre>
 do {
   // code
 } while (condition);
-</pre>
+</pre
+    >
 
-<h3>Example — Runs at least once</h3>
+    ✅ for loop → when iterations known ✅ while loop → when condition-based ✅
+    do…while → runs at least once
 
-<pre>
-let i = 1;
+    <h1>5 Steps to solve any problem</h1>
 
-do {
-  console.log(i);
-  i++;
-} while (i <= 5);
-</pre>
-    ✅ for loop → when iterations known
-✅ while loop → when condition-based
-✅ do…while → runs at least once
+    <ul>
+      <li>✅ Step 1 — Understand the question</li>
 
+      👉 What is given? 👉 What do you need to find?
+      <br />
+      <li>✅ Step 2 — Plan the logic</li>
 
-<h1>5 Steps to solve any problem</h1>
+      👉 Think in simple English 👉 Break into small steps
+      <br />
+      <li>✅ Step 3 — Choose the method</li>
 
-<ul><li>✅ Step 1 — Understand the question</li>
+      👉 Loop? 👉 If-else? 👉 Array method? Pick the right tool.
+      <br />
+      <li>✅ Step 4 — Flowchart or Pseudocode</li>
 
-👉 What is given?
-👉 What do you need to find?
-<br>
-<li>✅ Step 2 — Plan the logic</li>
+      👉 Draw the flowchart or write pseudocode 👉 like how problem work , how
+      to solve
+      <br />
+      <li>✅ Step 5 — Write the code</li>
 
-👉 Think in simple English
-👉 Break into small steps
-<br>
-<li>✅ Step 3 — Choose the method</li>
+      👉 Convert your logic into JavaScript 👉 Keep it simple first
+      <br />
+      <li>✅ Step 6 — Test the code</li>
 
-👉 Loop?
-👉 If-else?
-👉 Array method?
-
-Pick the right tool.
-<br>
-<li>✅ Step 4 — Flowchart or Pseudocode</li>
-
-👉 Draw the flowchart or write pseudocode
-👉 like how problem work , how to solve 
-<br>
-<li>✅ Step 5 — Write the code</li>
-
-👉 Convert your logic into JavaScript
-👉 Keep it simple first
-<br>
-<li>✅ Step 6 — Test the code</li>
-
-👉 Try different inputs
-👉 Check edge cases
-👉 Fix mistakes
-</ul>
+      👉 Try different inputs 👉 Check edge cases 👉 Fix mistakes
+    </ul>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

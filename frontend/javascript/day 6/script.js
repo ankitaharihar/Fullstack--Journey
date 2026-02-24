@@ -33,4 +33,10 @@ for (num=1; num<=100;num++){
 
     }
 
-    
+ // While loop
+let i = 1
+
+while(i <= 10){
+    console.log(i);
+    i++
+}   
