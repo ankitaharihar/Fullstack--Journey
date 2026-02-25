@@ -20,6 +20,8 @@ if(result !== undefined ){
 
 
 
+
+
 // Function 
 function cal(a,b,op){
     let result;
@@ -41,4 +43,15 @@ else {
 return result;
 }
 
-console.log(cal(3,4,"+"))
+console.log(cal(3,4,"+"));
+
+
+
+
+console.log(cal(5,8,"*"));
+
+
+
+for(let i = 0; i < 10 ;  i++){
+    console.log(cal(5,9,"*"));
+}
