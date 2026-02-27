@@ -17,7 +17,29 @@
     <h1>variale number of arguments (....nums)</h1>
 
     <h5>We cant declare same scope variables in same function</h5>
-    <h5>return gives the value of the function, return always with condition</h5>
+    <h5>
+      return gives the value of the function, return always with condition
+    </h5>
+
+    <h4>
+      Hoisting - it means that variable and function declarations are moved to
+      the top of their scope before code execution
+    </h4>
+    <h3>global scope - we access global variables in local scope</h3>
+    ex let num = 10; // global variable function example() { console.log(num);
+    // accessing global variable in local scope }
+    <h3>local scope - we access local variables in global scope</h3>
+    function example() { let num = 10; // local variable }
+    <h2>
+      Shadowing means - when a local variable has the same name as a global
+      variable, the local variable shadows the global variable within its scope
+    </h2>
+    <h3>
+      tdz - temporal dead zone means let and const variables are not accessible
+      before their declaration
+    </h3>
+
+    <button onclick="takeinput()">check prime number</button>
     <script src="script.js"></script>
   </body>
 </html>

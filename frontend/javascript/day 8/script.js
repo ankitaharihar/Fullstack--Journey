@@ -51,13 +51,39 @@
 // }
 // console.log(sum); 
  
-function doFactorial(num){
-    let factorial = 1;
-    for(let i =1; i<=num;i++){
+// function doFactorial(num){
+//     let factorial = 1;
+//     for(let i =1; i<=num;i++){
     
-    factorial = factorial * i;
+//     factorial = factorial * i;
     
-    }
-    return factorial;
-}
-console.log(doFactorial(4));
+//     }
+//     return factorial;
+// }
+// console.log(doFactorial(4));
+
+
+//check prime number
+// function checkprimenum(){
+//     const num = prompt("Enter a number");
+//     isprime = true;
+//     if(num%2==0){
+//       alert("Number is not prime") ; 
+//     }else{
+//         alert("Number is a prime");
+//     }
+//     return isprime;
+// }
+// checkprimenum();
+
+
+//take input from user 
+// function takeinput(){
+//     let num1 = Number(prompt("Enter num1"));
+//     let num2 = Number(prompt("Enter num2"));
+
+//     let sum = num1 + num2;
+//     alert(sum);
+// }
+
+
