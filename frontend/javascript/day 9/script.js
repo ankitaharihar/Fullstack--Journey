@@ -44,3 +44,53 @@
 
 // let cities2 = ["Pune","Nashik","Banglore","Hyderabad","Chennai","Delhi","Kolkata"];
 // console.log(Array.isArray(cities2)); // true
+
+
+
+// given add of number calculate sum of all number 
+// let num= [1,5,2,7];
+// let sum = 0;
+// for (let i=0;i<num.length;i++){
+//     sum = sum +num[i];
+    
+// }
+// console.log(sum);
+
+
+
+
+// function sumOfAarray(num){
+
+//     let sum = 0;
+//     for (let i=0;i<num.length;i++){
+//     sum = sum +num[i];
+    
+// }
+// return sum;
+// }
+
+
+
+//larger number in array
+// let num = [1,5,6,22,88,5,3];
+// let max = num[0];
+
+
+// for (let i=0;i<num.length;i++){
+//     if(num[i]>max){
+//         max = num[i];
+//     }
+// }
+// console.log(max);
+
+
+let num = [1,5,6,22,88,5,3];
+let min = num[0];
+
+
+for (let i=0;i>num.length;i++){
+   if(num[i]>min){
+       min = num[i];
+    }
+ }
+ console.log(min);
