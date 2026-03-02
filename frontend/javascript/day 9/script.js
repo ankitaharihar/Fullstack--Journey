@@ -70,12 +70,11 @@
 // }
 
 
+///used max for finding largest num
 
 //larger number in array
 // let num = [1,5,6,22,88,5,3];
 // let max = num[0];
-
-
 // for (let i=0;i<num.length;i++){
 //     if(num[i]>max){
 //         max = num[i];
@@ -84,13 +83,50 @@
 // console.log(max);
 
 
-let num = [1,5,6,22,88,5,3];
-let min = num[0];
+
+/// used min for finding smallest num
+// let num = [1,5,6,22,88,5,3];
+// let min = num[0];
+// for (let i=0;i>num.length;i++){
+//    if(num[i]>min){
+//        min = num[i];
+//     }
+//  }
+//  console.log(min);
 
 
-for (let i=0;i>num.length;i++){
-   if(num[i]>min){
-       min = num[i];
-    }
- }
- console.log(min);
+
+ ///second largest number in array
+// let arr = [3, 6, 7, 9, 8, 5];
+
+// // Step 1: edge case
+// if (arr.length < 2) {
+//   console.log("No second largest");
+// }
+
+// // Step 2: start with very small values
+// let largest = -Infinity;
+// let secondLargest = -Infinity;
+
+// // Step 3: loop
+// for (let i = 0; i < arr.length; i++) {
+//   let current = arr[i];
+
+//   // Step 4: new largest mila?
+//   if (current > largest) {
+//     secondLargest = largest; // purana largest neeche aaya
+//     largest = current;
+//   }
+
+//   // Step 5: beech wala case
+//   else if (current < largest && current > secondLargest) {
+//     secondLargest = current;
+//   }
+// }
+
+// console.log(secondLargest);
+
+
+
+
+
