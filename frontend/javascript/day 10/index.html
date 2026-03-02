@@ -1,11 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>DOM and DOM Manipulation</h1>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <button onclick="changestyle()">click to change style</button>
+    <h1 id="title">DOM - document object model</h1>
+    
+    <h2 >How to Select Elements in the DOM</h2><h3>why we should not use innerHTML because it is vulnerable to XSS attacks, it can</h3>
+    <button onclick="changeTitle()">click to change content</button>
+   
+    <ul>
+      <li>
+        i] id - will return you element with given id if there is no element
+        with that id, it returns null [getElementsByID(id name)]
+      </li>
+      <br>
+      <li>
+        ii] class - will return you a HTML collection of elements with given
+        class name if there is no element with that class name, it returns empty
+        HTML collection - array like object [getElementsByClassName(class name)]
+      </li>
+      <br>
+      <li>
+        iii] tag name - will return you a HTML collection of elements with given
+        tag name if there is no element with that tag name, it returns empty
+        HTML collection [getElementsByTagName(tag name)]
+      </li>
+      <br>
+        <li>
+            iv] query selector - will return you first element that matches the
+            given CSS selector if there is no element that matches the given CSS
+            selector, it returns null [querySelector(CSS selector)] 
+        </li><br>
+        <li>
+            v] query selector all - will return you a <b>NodeList</b> of elements that
+            matches the given CSS selector if there is no element that matches the
+            given CSS selector, it returns empty NodeList [querySelectorAll(CSS selector)]  
+        </li>
+    </ul>
+    <p class="para">Tree like structure of HTML elements</p>
+    <p class="para">This page demonstrates DOM manipulation techniques in JavaScript.</p>
+
+    <h1>DOM Manipulation</h1>
+    <ul><li>content  1] innerHTML 2] textContent 3] innerText</li>
+    <li>style  1] className 2] style property 3] </li></ul>
+    <script src="script.js"></script>
+  </body>
 </html>
