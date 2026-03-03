@@ -39,7 +39,7 @@
 // titleElement.innerText = "Title changed by JavaScript";
 
 
-const h1Element = document.getElementById("title");
+// const h1Element = document.getElementById("title");
 // function changeTitle() {
 //     h1Element.textContent = "Title changed by JavaScript";
 // }   
@@ -51,6 +51,7 @@ const h1Element = document.getElementById("title");
 
 
 //hide button
+const h1Element = document.getElementById("title");
 function changestyle() {
    if (h1Element.style.display =="none") {
     h1Element.style.display = "block";
