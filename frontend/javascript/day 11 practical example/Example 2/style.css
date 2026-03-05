@@ -1,0 +1,49 @@
+/* Theme */
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-theme {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Simple Button */
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Dark mode image effect */
+.dark-theme img {
+    filter: brightness(0.3);
+}
+
+/* Button Overlay */
+.button-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.button-overlay button {
+    display: block;
+    margin-bottom: 10px;
+}
