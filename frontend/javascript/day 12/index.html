@@ -1,13 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <button>click me</button>
     <h1>Events and Events Handling</h1>
+    <p>
+      ⚡ What is an Event? An event is an action that happens on a webpage. It
+      can be caused by: a user the browser JavaScript itself Examples of events:
+      Event What happens click user clicks a button mouseover mouse goes over
+      element keydown keyboard key pressed submit form submitted scroll page
+      scroll <br /><br /><br />So basically: Event =
+      <b>something that happens on the page.</b>
+    </p>
+    <h3>Examples</h3>
+    <img src="Event .png" alt="" />
+    <h1>Event Handling</h1>
+    <p>
+      Event handling is the process of responding to events that occur on a
+      webpage.
+    </p>
+    <h3>Event Listeners</h3>
+    <p>
+      An event listener is a function that waits for an event to occur and then
+      executes a block of code when the event is detected.
+    </p>
+    <h3>Event Propagation</h3>
+    <p>
+      Event propagation is the process by which an event travels through the
+      DOM tree. There are two phases: capturing and bubbling.
+    </p>
+    <h3>Event Objects</h3>
+    <p>
+      An event object is created when an event occurs. It contains information
+      about the event, such as the type of event, the element that triggered the
+      event, and any data associated with the event.
+    </p>
+    <h3>Event Delegation</h3>
+    <p>
+      Event delegation is a technique where an event listener is attached to a
+      parent element, and it handles events for its child elements. This can be
+      useful for dynamically added elements or when you want to reduce the number
+      of event listeners.
+    </p>
+    <h3>Event Bubbling</h3>
+    <p>
+      Event bubbling is the default behavior of event propagation, where an event
+      triggered on a child element will bubble up to its parent elements.
+    </p>
+    <h3>3 ways to handle events</h3>
+    <p>
+      1. Inline event handling: This involves adding an event handler directly to
+      an HTML element using the "on" attribute. For example:
+      <code>&lt;button onclick="alert('Button clicked!')">Click me&lt;/button></code>
+      <br /><br />2. DOM Level 0 event handling: This involves assigning a
+      function to an event property of an HTML element. For example:
+      <code>
+        const button = document.querySelector('button');
+        button.onclick = function() {
+          alert('Button clicked!');
+        };
+      </code>
+      <br /><br />3. DOM Level 2 event handling: This involves using the
+      addEventListener method to attach an event listener to an HTML element.
+      For example:
+      <code>
+        const button = document.querySelector('button');
+        button.addEventListener('click', function() {
+          alert('Button clicked!');
+        });
+      </code>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
