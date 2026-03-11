@@ -1,9 +1,9 @@
 body{
 font-family:sans-serif;
-background:#f2f2f2;
+background:#eee;
 }
 
-#games{
+#recipes{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:20px;
@@ -14,12 +14,6 @@ padding:20px;
 background:white;
 border-radius:10px;
 overflow:hidden;
-cursor:pointer;
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.05);
 }
 
 .card img{
@@ -30,5 +24,4 @@ object-fit:cover;
 
 .card h3{
 padding:10px;
-font-size:16px;
 }

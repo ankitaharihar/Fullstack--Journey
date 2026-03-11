@@ -1,27 +1,20 @@
-const container = document.getElementById("games");
-
-fetch("https://api.rawg.io/api/games?key=YOUR_API_KEY")
+fetch("https://dummyjson.com/recipes")
 
 .then(res => res.json())
 
 .then(data => {
 
-data.results.forEach(game => {
+data.recipes.forEach(recipe => {
 
 const div = document.createElement("div");
-div.className="card";
+div.className = "card";
 
 div.innerHTML = `
-<img src="${game.background_image}">
-<h3>${game.name}</h3>
+<img src="${recipe.image}">
+<h3>${recipe.name}</h3>
 `;
 
-div.onclick = ()=>{
-localStorage.setItem("game", JSON.stringify(game));
-window.location="details.html";
-}
-
-container.appendChild(div);
+document.getElementById("recipes").appendChild(div);
 
 });
 
