@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background-color: #f8fafc;
+}
+
+.card {
+    padding: 28px 32px;
+    border-radius: 16px;
+    background-color: #e2e8f0;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.card.active {
+    background-color: #0f766e;
+    color: white;
+    transform: scale(1.05);
+}

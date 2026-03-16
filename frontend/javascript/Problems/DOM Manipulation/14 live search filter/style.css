@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 24px;
+}
+
+input {
+    width: min(100%, 320px);
+    padding: 10px 12px;
+    margin-bottom: 16px;
+}
