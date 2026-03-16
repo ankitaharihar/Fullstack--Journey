@@ -1,22 +1,14 @@
-const btn = document.querySelector("#myBtn");
+const addBtn = document.querySelector("#addBtn");
+const removeBtn = document.querySelector("#removeBtn");
 const para = document.querySelector("#myPara");
 
-function toggleStyle() {
-    para.classList.toggle("highlight");
+function addClass() {
+    para.classList.add("highlight");
 }
 
-btn.addEventListener("click", toggleStyle);
+function removeClass() {
+    para.classList.remove("highlight");
+}
 
-
-// ---
-
-// **`classList.toggle` andar kya hota hai:**
-// ```
-// Button Click
-//      ↓
-// "highlight" class para pe hai?
-//      ↓                    ↓
-//     YES                   NO
-//      ↓                    ↓
-//   Remove it            Add it
-//   (class chali jaati)  (class lag jaati)
+addBtn.addEventListener("click", addClass);
+removeBtn.addEventListener("click", removeClass);
