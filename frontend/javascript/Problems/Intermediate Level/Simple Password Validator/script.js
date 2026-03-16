@@ -5,4 +5,4 @@ function isValidPassword(password) {
     return minLength && hasDigit;
 }
 
-console.log(isValidPassword("Pass123"));
+console.log(isValidPassword("SampleValue1"));
