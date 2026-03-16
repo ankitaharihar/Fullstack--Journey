@@ -1,76 +1,94 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Notes</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <div class="container">
+  <body>
+    <div class="container">
+      <h1>Variables in JavaScript</h1>
+      <p>
+        A variable is a container that stores data which can be used later in a
+        program.
+      </p>
 
-    <h1>Variables in JavaScript</h1>
-    <p>
-      A variable is a container that stores data which can be used later in a program.
-    </p>
+      <h2>var, let, const</h2>
+      <ul>
+        <li>
+          <b>var</b> - function scoped, can be redeclared and updated, hoisted
+          with undefined
+        </li>
+        <li>
+          <b>let</b> - block scoped, cannot be redeclared but can be updated,
+          hoisted with TDZ
+        </li>
+        <li>
+          <b>const</b> - block scoped, cannot be redeclared or updated, hoisted
+          with TDZ
+        </li>
+      </ul>
 
-    <h2>var, let, const</h2>
-    <ul>
-      <li><b>var</b> — function scoped, can be redeclared and updated, hoisted with undefined</li>
-      <li><b>let</b> — block scoped, cannot be redeclared but can be updated, hoisted with TDZ</li>
-      <li><b>const</b> — block scoped, cannot be redeclared or updated, hoisted with TDZ</li>
-    </ul>
+      <hr />
 
-    <hr />
+      <h1>Rules in JavaScript</h1>
+      <ul>
+        <li>
+          Variable names must start with a letter, underscore, or dollar sign
+        </li>
+        <li>
+          Variable names can contain letters, numbers, underscores, and dollar
+          signs
+        </li>
+        <li>Variable names cannot be reserved keywords</li>
+        <li>Variable names are case-sensitive</li>
+        <li>Variable names should be descriptive and meaningful</li>
+        <li>camelCase is the preferred naming convention</li>
+      </ul>
 
-    <h1>Rules in JavaScript</h1>
-    <ul>
-      <li>Variable names must start with a letter, underscore, or dollar sign</li>
-      <li>Variable names can contain letters, numbers, underscores, and dollar signs</li>
-      <li>Variable names cannot be reserved keywords</li>
-      <li>Variable names are case-sensitive</li>
-      <li>Variable names should be descriptive and meaningful</li>
-      <li>camelCase is the preferred naming convention</li>
-    </ul>
+      <hr />
 
-    <hr />
+      <h1>Data Types in JavaScript</h1>
 
-    <h1>Data Types in JavaScript</h1>
+      <h2>1. Primitive Data Types</h2>
+      <p>
+        Primitive data types are immutable and stored directly in the variable.
+      </p>
+      <ul>
+        <li>string</li>
+        <li>number</li>
+        <li>bigint</li>
+        <li>boolean</li>
+        <li>null</li>
+        <li>undefined</li>
+        <li>symbol</li>
+      </ul>
 
-    <h2>1. Primitive Data Types</h2>
-    <p>Primitive data types are immutable and stored directly in the variable.</p>
-    <ul>
-      <li>string</li>
-      <li>number</li>
-      <li>bigint</li>
-      <li>boolean</li>
-      <li>null</li>
-      <li>undefined</li>
-      <li>symbol</li>
-    </ul>
+      <h2>2. Non-Primitive Data Types</h2>
+      <p>Non-primitive data types are mutable and stored by reference.</p>
+      <ul>
+        <li>object</li>
+        <li>array</li>
+        <li>function</li>
+      </ul>
 
-    <h2>2. Non-Primitive Data Types</h2>
-    <p>Non-primitive data types are mutable and stored by reference.</p>
-    <ul>
-      <li>object</li>
-      <li>array</li>
-      <li>function</li>
-    </ul>
+      <hr />
 
-    <hr />
+      <h1>Hoisting in JavaScript</h1>
+      <p>
+        Hoisting is a mechanism where variable and function declarations are
+        moved to the top of their scope during the memory phase.
+      </p>
+      <ul>
+        <li><b>Variable Hoisting</b> - var -> undefined, let/const -> TDZ</li>
+        <li>
+          <b>Function Hoisting</b> - function declarations are fully hoisted
+        </li>
+      </ul>
+    </div>
 
-    <h1>Hoisting in JavaScript</h1>
-    <p>
-      Hoisting is a mechanism where variable and function declarations are moved to the top of their scope during the memory phase.
-    </p>
-    <ul>
-      <li><b>Variable Hoisting</b> — var → undefined, let/const → TDZ</li>
-      <li><b>Function Hoisting</b> — function declarations are fully hoisted</li>
-    </ul>
-
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

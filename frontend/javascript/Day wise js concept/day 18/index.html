@@ -1,32 +1,119 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Day 18 - Async Await and API Calls</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Async await</h1>
-    <p>async function get1Recipe() { ... }</p>
-    <h1>request method </h1>
-    <li>GET - Retrieve data</li>
-    <li>POST - Create new data - { method:"POST" body:{ ... } header:{ .. }}</li>
-    <li>PUT - Update existing data</li>
-    <li>DELETE - Remove data</li>
-    <h2>try and catch</h2>
-    <p>try { ... } catch (error) { ... }</p>
-    <!-----request data----->
-    <h1>Query Parameters - query parameter is ?id=1 , ?limit=10&prefix=ch</h1>
-    <h1><param name="" value=""></h1>
-    <h1>body</h1>
-    <h1>headers</h1>
+    <main class="container">
+      <header class="hero">
+        <span class="tag">Day 18</span>
+        <h1>Async Await, Request Methods and API Practice</h1>
+        <p>
+          Aaj ka topic asynchronous JavaScript ka core part hai. Niche concept
+          summary aur live API fetch demo dono diye gaye hain.
+        </p>
+      </header>
 
+      <section class="grid">
+        <article class="card">
+          <h2>1) Async / Await</h2>
+          <p>
+            Async function Promise return karta hai. Await se Promise resolve
+            hone ka wait karte hain, jisse code readable ho jata hai.
+          </p>
+          <pre class="code">
+async function getRecipe() {
+  try {
+    const response = await fetch("https://dummyjson.com/recipes/1");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}</pre
+          >
+        </article>
 
+        <article class="card">
+          <h2>2) HTTP Request Methods</h2>
+          <ul>
+            <li><strong>GET</strong>: Data retrieve karne ke liye.</li>
+            <li><strong>POST</strong>: Naya data create karne ke liye.</li>
+            <li><strong>PUT</strong>: Existing data update karne ke liye.</li>
+            <li><strong>DELETE</strong>: Data remove karne ke liye.</li>
+          </ul>
+        </article>
 
+        <article class="card">
+          <h2>3) Try / Catch</h2>
+          <p>
+            Network call fail hone par app crash na ho, isliye risky async code
+            ko try block me rakhte hain aur error ko catch block me handle karte
+            hain.
+          </p>
+          <pre class="code">
+try {
+  const data = await apiCall();
+} catch (error) {
+  console.error("Request failed", error);
+}</pre
+          >
+        </article>
 
-<h1>practice api call</h1>
+        <article class="card">
+          <h2>4) Request Data Parts</h2>
+          <ul>
+            <li>
+              <strong>Query Params</strong>: URL ke end me jaate hain, jaise
+              <span class="inline-code">?id=1</span> ya
+              <span class="inline-code">?limit=10&amp;prefix=ch</span>.
+            </li>
+            <li>
+              <strong>Body</strong>: POST/PUT requests me actual data payload.
+            </li>
+            <li>
+              <strong>Headers</strong>: Metadata, jaise content type ya token.
+            </li>
+          </ul>
+        </article>
 
+        <article class="card">
+          <div class="practice-head">
+            <h2>5) Practice API Call (Live)</h2>
+            <p>Recipe ID daalo aur data fetch karo. Default value 1 hai.</p>
+          </div>
+
+          <div class="controls">
+            <input
+              id="recipeId"
+              type="number"
+              min="1"
+              value="1"
+              placeholder="Enter recipe id"
+            />
+            <button id="loadRecipeBtn">Load Recipe</button>
+          </div>
+
+          <p id="status" class="status"></p>
+
+          <article id="recipeCard" class="recipe-card" hidden>
+            <h3 id="recipeName"></h3>
+            <p id="recipeMeta" class="meta"></p>
+
+            <h4>Ingredients</h4>
+            <ul id="ingredientsList"></ul>
+
+            <h4>First Instruction</h4>
+            <p id="firstInstruction"></p>
+          </article>
+        </article>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
 </html>
+
