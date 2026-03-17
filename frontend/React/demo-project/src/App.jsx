@@ -1,11 +1,24 @@
-import './App.css'
 import Firstdemo from './Firstdemo'
 function App() {
   return(
     <div><h1>This is first demo project</h1>
     <Firstdemo>
-      </Firstdemo></div>
+      </Firstdemo>
+      <hr />
+      <TextCom text="my name is tux" city="Pune" age={56}></TextCom>
+      </div>
   )
 }
 
-export default App
+function TextCom(props){
+  console.log("Something", props);
+  return (
+    <div>
+      <p>{props.text}</p>
+      <p>{props.city}</p>
+      <p>{props.age}</p>
+    </div>
+  )
+}
+
+export default App;
