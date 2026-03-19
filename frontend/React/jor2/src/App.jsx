@@ -59,7 +59,8 @@ function App() {
 // // )
 return(
   <div>
-    <h1>hhiii   // extend value from array </h1>
+    <h1>hhiii    </h1>
+    <h2>// extend value from array</h2>
     <Day3></Day3>
   </div>
   
