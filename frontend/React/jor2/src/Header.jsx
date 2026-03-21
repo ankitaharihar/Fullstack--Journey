@@ -1,8 +1,17 @@
+import { useEffect, useState } from "react";
 function Do(){
+    const [count, setCount] = useState(0);
+    function Increasecount(){
+        setCount(count + 1);
+    }
+    useEffect(()=>{
+        console.log("useEffect called");
+    } , [count]);
+    
     return(
-        <div className="container">
-            <h1>Heading</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        <div>
+            <p>Count: {count}</p>
+            <button onClick={Increasecount}>Increase</button>
         </div>
     )
 }
